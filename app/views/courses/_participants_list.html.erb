@@ -1,0 +1,21 @@
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Course</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+<!--The "@" mark that was before the "participants.each" below was removed to grab the "render ..." in the show file, rather than grabbing the other variable in the index/controller. -->
+
+  <tbody>
+    <% participants.each do |participant| %>
+      <tr>
+        <td><%= participant.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

@@ -1,0 +1,17 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Course</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% participants.each do |participant| %>
+      <tr>
+        <td><%= participant.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
